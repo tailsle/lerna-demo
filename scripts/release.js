@@ -3,7 +3,7 @@
   const inquirer = (await import("inquirer")).default;
   const fs = (await import("fs-extra")).default;
   const handlebars = (await import("handlebars")).default;
-  const { execaSync } = await import("execa");
+  const { exec } = (await import("shelljs")).default;
   const path = await import("path");
   const cwd = process.cwd();
 
@@ -35,9 +35,8 @@
     const publishPackages = await choosePackage(packages);
     if (publishPackages.packages.length !== 0) {
       reWriteLerna(publishPackages);
-      execaSync("lerna publish", {
-        stdio: "inherit",
-        cwd,
+      exec("lerna publish", {
+        exec: true,
       });
     } else {
       console.log("没有选择包");
