@@ -1,6 +1,7 @@
 {
   "packages": [
-    "packages/demo-pkg"
+    "packages/util-pkg"
   ],
+  "useWorkspaces":true,
   "version": "independent"
 }

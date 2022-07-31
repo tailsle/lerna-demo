@@ -8,5 +8,6 @@
       {{/if}}
     {{/each}}
   ],
+  "useWorkspaces":true,
   "version": "independent"
 }
