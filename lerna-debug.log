@@ -1,0 +1,15 @@
+0 silly argv {
+0 silly argv   _: [ 'create' ],
+0 silly argv   lernaVersion: '5.3.0',
+0 silly argv   '$0': '/usr/local/pnpm-global/5/node_modules/lerna/cli.js',
+0 silly argv   name: 'util-pkg'
+0 silly argv }
+1 notice cli v5.3.0
+2 verbose rootPath /Users/terry/Desktop/lerna-demo
+3 error Error: Command failed with exit code 1: git config --get user.email
+3 error     at makeError (/usr/local/pnpm-global/5/node_modules/.pnpm/execa@5.1.1/node_modules/execa/lib/error.js:60:11)
+3 error     at Function.module.exports.sync (/usr/local/pnpm-global/5/node_modules/.pnpm/execa@5.1.1/node_modules/execa/index.js:194:17)
+3 error     at Object.execSync (/usr/local/pnpm-global/5/node_modules/.pnpm/@lerna+child-process@5.3.0/node_modules/@lerna/child-process/index.js:39:16)
+3 error     at CreateCommand.gitConfig (/usr/local/pnpm-global/5/node_modules/.pnpm/@lerna+create@5.3.0/node_modules/@lerna/create/index.js:181:25)
+3 error     at CreateCommand.initialize (/usr/local/pnpm-global/5/node_modules/.pnpm/@lerna+create@5.3.0/node_modules/@lerna/create/index.js:107:47)
+3 error     at /usr/local/pnpm-global/5/node_modules/.pnpm/@lerna+command@5.3.0/node_modules/@lerna/command/index.js:274:24
